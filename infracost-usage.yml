@@ -1,0 +1,29 @@
+version: 0.1
+
+# Define usage patterns for resources that require it
+resource_usage:
+  # EC2 instances
+  aws_instance.this:
+    operating_system: linux
+    monthly_hrs: 730 # 24/7 for a month
+    vcpu: 2 # t3.medium has 2 vCPUs
+    memory_gb: 4 # t3.medium has 4GB RAM
+  
+  # RDS Aurora MySQL
+  aws_rds_cluster.this:
+    backup_storage_gb: 20
+    monthly_io_requests: 1000000
+    storage_gb: 100
+    
+  # EFS
+  aws_efs_file_system.this:
+    storage_gb: 100
+    monthly_data_storage_gb: 100
+    
+  # ALB
+  aws_lb.this:
+    monthly_processed_data_gb: 1000
+    
+  # NAT Gateway
+  aws_nat_gateway.this:
+    monthly_data_processed_gb: 1000
