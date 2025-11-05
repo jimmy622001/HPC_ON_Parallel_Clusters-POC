@@ -1,4 +1,4 @@
-# 🚀 Open OnDemand on AWS with Parallel Cluster
+# 🚀 Open OnDemand on AWS with Parallel Cluster POC
 
 This reference architecture provides a set of templates for deploying [Open OnDemand (OOD)](https://openondemand.org/) with [AWS CloudFormation](https://aws.amazon.com/cloudformation/) and integration points for both [AWS ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/) and [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/).
 
